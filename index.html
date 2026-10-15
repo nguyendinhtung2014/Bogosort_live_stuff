@@ -7,53 +7,9 @@
     <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css"/>
     <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
     <link rel="icon" type="image/png" href="favicon.ico">
-    <style>
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            margin: 0;
-            padding: 20px;
-        }
-        body.light{
-            --bg-color: #fdfdfd;
-            --text-color: #111111;
-            --border-color: #111111;
-            --dash-color: #ccc;
-            --panel-bg: #fafafa;
-            --output-bg: #f4f4f4;
-            --link-color: #0066cc;
-        }
-        body.dark {
-            --bg-color: #121212;
-            --text-color: #e0e0e0;
-            --border-color: #e0e0e0;
-            --dash-color: #444444;
-            --panel-bg: #1e1e1e;
-            --output-bg: #252525;
-            --link-color: #66b2ff;
-        }
-        #output {
-            white-space: pre-wrap;
-            font-family: monospace;
-            line-height: 1.15;
-        }
-        .wrapper {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 40px;
-            margin-top: 20px;
-        }
-        .panel-left {
-            flex: 1 1 calc(50% - 20px);
-            min-width: 290px;
-        }
-        .panel-right {
-            flex: 1 1 calc(50% - 20px);
-            min-width: 290px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body  class="light">
     <h1>Bogosort live stuff</h1>
     <select onchange="updateTheme(this.value)">
         <option value="light">light mode</option>
@@ -93,6 +49,7 @@
                         <tr><td colspan="2">wait for it...</td></tr>
                     </tbody>
                 </table>
+            <img src="bob.jpg" width="200" height="92">
         </div>
     </div>
 </body>

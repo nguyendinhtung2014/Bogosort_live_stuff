@@ -88,7 +88,7 @@ async def render_csv():
     for row in news:
         if(len(row)>=1):
             htmlrows.append(f"<tr><td>{row[0]}</td><td>{row[1]if len(row)>1 else ""}</td></tr>")
-    table.innerHTML="".join(htmlrows)
+    table.innerHTML="".join(htmlrows[::-1])
 if __name__ == "__main__":
     asyncio.ensure_future(test())
     asyncio.ensure_future(render_csv())
